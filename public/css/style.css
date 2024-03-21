@@ -3,7 +3,6 @@
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #f57c00;
     width: 250px;
 }
 
@@ -33,7 +32,12 @@
 
 #sidebar .sidebar-menu .item-menu .link-menu {
 	color: #fff;
-	padding: 0 15px;
+}
+
+#sidebar .sidebar-menu .item-menu .link-menu i {
+	float: left;
+	width: 50px;
+	text-align: center;
 }
 
 #nav-header {
@@ -43,4 +47,16 @@
 #main {
 	padding-left: 270px;
 	padding-right: 20px;
+}
+
+.fr {
+	float: right;
+}
+
+.fl {
+	float: left;
+}
+
+.auth {
+	
 }
