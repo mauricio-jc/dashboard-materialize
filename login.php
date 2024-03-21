@@ -5,40 +5,51 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
         <link rel="stylesheet" href="public/vendor/materialize/css/materialize.min.css">
-        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="public/css/login.css">
 
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Login</title>
     </head>
-    <body class="auth grey lighten-3">
+    <body class="grey lighten-3">
         <div class="container">
             <div class="row">
-                <div class="row">
+                <div class="valign-wrapper">
                     <div class="col m6">
-                        6-columns (one-half)
+                        <img src="public/images/logo-login.png" alt="Logo">
                     </div>
                     
-                    <div class="col m6">
-                        <div class="input-field col m12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">First Name</label>
-                        </div>
+                    <div class="col m6">                        
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="row">
+                                    <h5 class="center">Acesso ao sistema</h5>
+                                    <br>
 
-                        <div class="input-field col m12">
-                            <i class="material-icons prefix">phone</i>
-                            <input id="icon_telephone" type="tel" class="validate">
-                            <label for="icon_telephone">Telephone</label>
+                                    <div class="input-field col m12">
+                                        <i class="material-icons prefix">mail_outline</i>
+                                        <input id="icon_prefix" type="email" class="validate">
+                                        <label for="icon_prefix">E-mail</label>
+                                    </div>
+
+                                    <div class="input-field col m12">
+                                        <i class="material-icons prefix">lock_outline</i>
+                                        <input id="icon_telephone" type="password" class="validate">
+                                        <label for="icon_telephone">Senha</label>
+                                    </div>
+
+                                    <div class="input-field col m12">
+                                        <a href="index.php" class="waves-effect waves-light btn-large orange darken-2 right">Entrar</a>
+                                    </div>
+
+                                    <div class="col m12">
+                                        <a href="#" class="orange-text darken-2 right">Esqueci minha senha</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-    
-                <!-- <form class="col s12">
-                    <div class="row">
-                        
-                        
-                    </div>
-                </form> -->
+                </div>
             </div>
         </div>
 

@@ -1,0 +1,7 @@
+html, body, .container, .row, .valign-wrapper {
+	height: 100%;
+}
+
+body .container .row img {
+	width: 80%;
+}
