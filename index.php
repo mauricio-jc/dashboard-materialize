@@ -13,7 +13,7 @@
     </head>
     <body>
         <div id="sidebar" class="orange darken-2 z-depth-2">
-            <div id="sidebar-header">
+            <div class="sidebar-header">
                 <a href="#">
                     <img src="public/images/logo.png" alt="Logo">
                 </a>
@@ -77,8 +77,12 @@
             </ul>
         </div>
 
-        <nav id="nav-header" class="white">
+        <!-- Start Nav header and sidenav mobile -->
+        <nav id="nav-header-mobile" class="nav-extended white">
             <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="orange-text sidenav-trigger right">
+                    <i class="material-icons">menu</i>
+                </a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
                         <a href="#!" class="dropdown-trigger orange-text darken-2" data-target="user">
@@ -94,6 +98,80 @@
             </div>
         </nav>
 
+        <ul class="sidenav orange darken-2 z-depth-2" id="mobile-demo">
+            <div class="sidebar-header">
+                <a href="#">
+                    <img src="public/images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <li>
+                <div class="user-view">
+                    <a href="#">
+                        <span class="white-text name">Fulano Beltrano</span>
+                    </a>
+                    <a href="login.php">
+                        <span class="white-text email">Sair</span>
+                    </a>
+                </div>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">dashboard</i> Dashboard
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">schedule</i> Agendamentos
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">group</i> Clientes
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">pie_chart</i> Módulos
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">device_hub</i> Permissões
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">format_list_bulleted</i> Objetivos
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">location_on</i> Origem
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">settings</i> Parâmetros
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">receipt</i> Planos
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">group</i> Profissionais
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#" class="link-menu">
+                    <i class="material-icons">format_list_bulleted</i> Serviços
+                </a>
+            </li>
+        </ul>
+        <!-- End Nav header and sidenav mobile -->
+
         <section id="main">
             <h4>Bem vindo Fulano Beltrano</h4>
             <hr>
@@ -104,6 +182,8 @@
         <script src="public/vendor/materialize/js/materialize.min.js"></script>
         <script>
             $(document).ready(function() {
+                $('.sidenav').sidenav();
+
                 $('select').formSelect();
 
                 $('.dropdown-trigger').dropdown({
