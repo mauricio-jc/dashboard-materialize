@@ -15,35 +15,35 @@
         <div class="container">
             <div class="row">
                 <div class="valign-wrapper">
-                    <div class="col m6">
+                    <div class="col s12 m6 logo">
                         <img src="public/images/logo-login.png" alt="Logo">
                     </div>
                     
-                    <div class="col m6">                        
+                    <div class="col s12 m6 form-card">
                         <div class="card">
                             <div class="card-content">
                                 <div class="row">
                                     <h5 class="center">Acesso ao sistema</h5>
                                     <br>
 
-                                    <div class="input-field col m12">
+                                    <div class="input-field col s12 m12">
                                         <i class="material-icons prefix">mail_outline</i>
                                         <input id="icon_prefix" type="email" class="validate">
                                         <label for="icon_prefix">E-mail</label>
                                     </div>
 
-                                    <div class="input-field col m12">
+                                    <div class="input-field col s12 m12">
                                         <i class="material-icons prefix">lock_outline</i>
                                         <input id="icon_telephone" type="password" class="validate">
                                         <label for="icon_telephone">Senha</label>
                                     </div>
 
-                                    <div class="input-field col m12">
-                                        <a href="index.php" class="waves-effect waves-light btn-large orange darken-2 right">Entrar</a>
+                                    <div class="input-field col s12 m12">
+                                        <a href="index.php" class="btn waves-effect waves-light btn-large orange darken-2 right">Entrar</a>
                                     </div>
 
-                                    <div class="col m12">
-                                        <a href="rescue_password.php" class="orange-text darken-2 right">Esqueci minha senha</a>
+                                    <div id="rescue-login-link" class="col s12 m12">
+                                        <a href="rescue_password.php" id="rescue-link" class="orange-text darken-2 right">Esqueci minha senha</a>
                                     </div>
                                 </div>
                             </div>

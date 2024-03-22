@@ -5,3 +5,35 @@ html, body, .container, .row, .valign-wrapper {
 body .container .row img {
 	width: 80%;
 }
+
+@media all and (max-width: 992px) {
+	.valign-wrapper {
+		display: block !important;
+	}
+
+	.logo {
+		width: 100% !important;
+		text-align: center;
+	}
+
+	.logo img {
+		width: 40% !important;
+	}
+
+	.form-card {
+		width: 100% !important;	
+	}
+
+	.btn {
+		width: 100%;
+	}
+
+	#rescue-login-link {
+		text-align: center;
+	}
+
+	#rescue-link,
+	#login-link {
+		float: none !important;
+	}
+}
